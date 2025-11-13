@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 8px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Apply only to the messages container */
+.message-container::-webkit-scrollbar {
+  width: 8px;
+  right: 0px;
+}
+
+.message-container::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 8px;
+}
+
+.message-container::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.message-container::-webkit-scrollbar-track {
+  background: transparent;
+}
