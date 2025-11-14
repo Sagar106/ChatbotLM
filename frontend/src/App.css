@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "highlight.js/styles/github-dark.css";
 
 textarea::-webkit-scrollbar {
   width: 6px;
@@ -15,7 +14,6 @@ textarea::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Apply only to the messages container */
 .message-container::-webkit-scrollbar {
   width: 8px;
   right: 0px;
@@ -32,4 +30,23 @@ textarea::-webkit-scrollbar-track {
 
 .message-container::-webkit-scrollbar-track {
   background: transparent;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  background: #242424;
+}
+
+#root {
+  height: 100%;
+}
+
+.chat-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
